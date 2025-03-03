@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
+}
+
+* {
+  scroll-padding: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #303030;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #505050;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
+.animate-onset {
+  animation: onset 0.2s ease-out;
+}
+
+@keyframes onset {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
