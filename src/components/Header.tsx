@@ -15,7 +15,7 @@ export const Header: FC = () => {
       )}
 
       <Link to="/">
-        <h1 className="font-serif text-5xl font-light tracking-wider">Logo</h1>
+        <h1 className="font-serif text-2xl font-light tracking-wider">✨Bead Craft🌀</h1>
       </Link>
     </header>
   )
