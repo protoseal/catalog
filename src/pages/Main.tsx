@@ -8,7 +8,7 @@ import { FC, useEffect, useRef, useState } from "react"
 
 export const Main: FC = () => {
   const [activeFilter, setActiveFilter] = useState<CatalogItemCategory | null>(
-    localStorage.getItem("filter") as CatalogItemCategory | null,
+    sessionStorage.getItem("filter") as CatalogItemCategory | null,
   )
   const [catalogItems, setCatalogItems] = useState<CatalogItem[]>(CATALOG)
   const scrollPercent = useScrollPercentage()

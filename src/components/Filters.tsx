@@ -41,9 +41,9 @@ export const Filters: FC<Props> = ({ activeFilter, setActiveFilter, scrollToCata
     scrollToCatalog()
 
     if (activeFilter === category) {
-      localStorage.removeItem("filter")
+      sessionStorage.removeItem("filter")
     } else {
-      localStorage.setItem("filter", category)
+      sessionStorage.setItem("filter", category)
     }
   }
 

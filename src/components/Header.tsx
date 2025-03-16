@@ -7,7 +7,7 @@ export const Header: FC = () => {
   const location = useLocation()
 
   return (
-    <header className="flex w-full items-center justify-between gap-2 p-5">
+    <header className="flex w-full items-center justify-between gap-2 pb-5 pl-3 pr-5 pt-5">
       {location.pathname.startsWith("/items/") && (
         <button className="animate-onset" onClick={() => navigate(-1)}>
           <ArrowLeftIcon className="h-10 w-10 stroke-white" />
